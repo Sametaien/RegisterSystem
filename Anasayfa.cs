@@ -33,6 +33,7 @@ namespace Summer_Project
 
         SqlConnection baglanti = new SqlConnection(@"Data Source=EXTRONIC;Initial Catalog=DbSinavOgrenci;Integrated Security=True");
         DbSinavOgrenciEntities db = new DbSinavOgrenciEntities();
+
         public string dataTabloIsim = "ogr";
 
 
@@ -110,12 +111,26 @@ namespace Summer_Project
         {
             boxAra.Show();
             pictureBox2.Show();
+            if (dataTabloIsim == "ogr")
+            {
+                string aranan = boxAra.Text;
+                var degerler = from s in db.TBLOGRENCI
+                               where s.AD.Contains(aranan)
+                               select s;
+                dataGridView1.DataSource = degerler.ToList();
+            }
+            else
+            {
+                MessageBox.Show("Aranan öğrenci bulunmamıştır. Öğrenci eklemek ister misiniz?", "Hata Mesajı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            }
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             boxAra.Hide();
             pictureBox2.Hide();
+            dataGridView1.DataSource = null;
+            dataGridView1.Refresh();
         }
 
         private void butonListe_Click(object sender, EventArgs e)
@@ -127,7 +142,34 @@ namespace Summer_Project
 
         private void butonDers_Click(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = db.TBLDERSLER.ToList();
+            //dataGridView1.Columns[].Visible = false;
+            dataTabloIsim = "ders";
+        }
 
+        private void butonNot_Click(object sender, EventArgs e)
+        {
+            var query = from item in db.TBLNOTLAR
+                        select new
+                        {
+                            item.NOTID,
+                            item.TBLOGRENCI.AD,
+                            item.TBLOGRENCI.SOYAD,
+                            item.DERS,
+                            item.SINAV1,
+                            item.SINAV2,
+                            item.SINAV3,
+                            item.DURUM
+                        };
+            dataGridView1.DataSource = query.ToList();
+            //dataGridView1.DataSource = db.TBLNOTLAR.ToList();
+            dataTabloIsim = "not";
+        }
+
+        private void btnOgrenciEkle_Click(object sender, EventArgs e)
+        {
+            OgrenciEkle fr = new OgrenciEkle();
+            fr.Show();
         }
     }
 }
