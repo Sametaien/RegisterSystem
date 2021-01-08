@@ -34,11 +34,18 @@ namespace Summer_Project
             this.dbSinavOgrenciDataSet = new Summer_Project.DbSinavOgrenciDataSet();
             this.dbSinavOgrenciDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAyarlar = new System.Windows.Forms.Button();
+            this.btnOrtalama = new System.Windows.Forms.Button();
+            this.btnOgrListele = new System.Windows.Forms.Button();
+            this.btnAnasayfa = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.nickname = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlNav = new System.Windows.Forms.Panel();
             this.pnlAnasayfa = new System.Windows.Forms.Panel();
+            this.btnOgrenciSil = new System.Windows.Forms.Button();
+            this.btnOgrenciEkle = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.butonDers = new System.Windows.Forms.Button();
@@ -47,20 +54,18 @@ namespace Summer_Project
             this.butonAra = new System.Windows.Forms.Button();
             this.boxAra = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnAyarlar = new System.Windows.Forms.Button();
-            this.btnOrtalama = new System.Windows.Forms.Button();
-            this.btnOgrListele = new System.Windows.Forms.Button();
-            this.btnAnasayfa = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnOgrenciEkle = new System.Windows.Forms.Button();
+            this.pnlMove = new System.Windows.Forms.Panel();
+            this.evetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hayırToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtDelete = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dbSinavOgrenciDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dbSinavOgrenciDataSetBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlAnasayfa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dbSinavOgrenciDataSet
@@ -84,6 +89,50 @@ namespace Summer_Project
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
+            // btnAyarlar
+            // 
+            resources.ApplyResources(this.btnAyarlar, "btnAyarlar");
+            this.btnAyarlar.FlatAppearance.BorderSize = 0;
+            this.btnAyarlar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnAyarlar.Image = global::Summer_Project.Properties.Resources.settings;
+            this.btnAyarlar.Name = "btnAyarlar";
+            this.btnAyarlar.UseVisualStyleBackColor = true;
+            this.btnAyarlar.Click += new System.EventHandler(this.btnAyarlar_Click);
+            this.btnAyarlar.Leave += new System.EventHandler(this.btnAyarlar_Leave);
+            // 
+            // btnOrtalama
+            // 
+            resources.ApplyResources(this.btnOrtalama, "btnOrtalama");
+            this.btnOrtalama.FlatAppearance.BorderSize = 0;
+            this.btnOrtalama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnOrtalama.Image = global::Summer_Project.Properties.Resources.diagram;
+            this.btnOrtalama.Name = "btnOrtalama";
+            this.btnOrtalama.UseVisualStyleBackColor = true;
+            this.btnOrtalama.Click += new System.EventHandler(this.btnOrtalama_Click);
+            this.btnOrtalama.Leave += new System.EventHandler(this.btnOrtalama_Leave);
+            // 
+            // btnOgrListele
+            // 
+            resources.ApplyResources(this.btnOgrListele, "btnOgrListele");
+            this.btnOgrListele.FlatAppearance.BorderSize = 0;
+            this.btnOgrListele.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnOgrListele.Image = global::Summer_Project.Properties.Resources.Conact;
+            this.btnOgrListele.Name = "btnOgrListele";
+            this.btnOgrListele.UseVisualStyleBackColor = true;
+            this.btnOgrListele.Click += new System.EventHandler(this.btnOgrListele_Click);
+            this.btnOgrListele.Leave += new System.EventHandler(this.btnOgrListele_Leave);
+            // 
+            // btnAnasayfa
+            // 
+            resources.ApplyResources(this.btnAnasayfa, "btnAnasayfa");
+            this.btnAnasayfa.FlatAppearance.BorderSize = 0;
+            this.btnAnasayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnAnasayfa.Image = global::Summer_Project.Properties.Resources.home;
+            this.btnAnasayfa.Name = "btnAnasayfa";
+            this.btnAnasayfa.UseVisualStyleBackColor = true;
+            this.btnAnasayfa.Click += new System.EventHandler(this.btnAnasayfa_Click);
+            this.btnAnasayfa.Leave += new System.EventHandler(this.btnAnasayfa_Leave);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
@@ -105,6 +154,13 @@ namespace Summer_Project
             this.nickname.BackColor = System.Drawing.Color.White;
             this.nickname.Name = "nickname";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Summer_Project.Properties.Resources.Untitled_11;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -121,6 +177,20 @@ namespace Summer_Project
             this.pnlAnasayfa.Controls.Add(this.butonListe);
             resources.ApplyResources(this.pnlAnasayfa, "pnlAnasayfa");
             this.pnlAnasayfa.Name = "pnlAnasayfa";
+            // 
+            // btnOgrenciSil
+            // 
+            resources.ApplyResources(this.btnOgrenciSil, "btnOgrenciSil");
+            this.btnOgrenciSil.Name = "btnOgrenciSil";
+            this.btnOgrenciSil.UseVisualStyleBackColor = true;
+            this.btnOgrenciSil.Click += new System.EventHandler(this.btnOgrenciSil_Click);
+            // 
+            // btnOgrenciEkle
+            // 
+            resources.ApplyResources(this.btnOgrenciEkle, "btnOgrenciEkle");
+            this.btnOgrenciEkle.Name = "btnOgrenciEkle";
+            this.btnOgrenciEkle.UseVisualStyleBackColor = true;
+            this.btnOgrenciEkle.Click += new System.EventHandler(this.btnOgrenciEkle_Click);
             // 
             // dataGridView1
             // 
@@ -177,69 +247,40 @@ namespace Summer_Project
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // btnAyarlar
+            // pnlMove
             // 
-            resources.ApplyResources(this.btnAyarlar, "btnAyarlar");
-            this.btnAyarlar.FlatAppearance.BorderSize = 0;
-            this.btnAyarlar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnAyarlar.Image = global::Summer_Project.Properties.Resources.settings;
-            this.btnAyarlar.Name = "btnAyarlar";
-            this.btnAyarlar.UseVisualStyleBackColor = true;
-            this.btnAyarlar.Click += new System.EventHandler(this.btnAyarlar_Click);
-            this.btnAyarlar.Leave += new System.EventHandler(this.btnAyarlar_Leave);
+            this.pnlMove.BackColor = System.Drawing.Color.Black;
+            resources.ApplyResources(this.pnlMove, "pnlMove");
+            this.pnlMove.Name = "pnlMove";
+            this.pnlMove.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseDown);
+            this.pnlMove.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseMove);
+            this.pnlMove.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlMove_MouseUp);
             // 
-            // btnOrtalama
+            // evetToolStripMenuItem
             // 
-            resources.ApplyResources(this.btnOrtalama, "btnOrtalama");
-            this.btnOrtalama.FlatAppearance.BorderSize = 0;
-            this.btnOrtalama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnOrtalama.Image = global::Summer_Project.Properties.Resources.diagram;
-            this.btnOrtalama.Name = "btnOrtalama";
-            this.btnOrtalama.UseVisualStyleBackColor = true;
-            this.btnOrtalama.Click += new System.EventHandler(this.btnOrtalama_Click);
-            this.btnOrtalama.Leave += new System.EventHandler(this.btnOrtalama_Leave);
+            this.evetToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hayırToolStripMenuItem});
+            this.evetToolStripMenuItem.Name = "evetToolStripMenuItem";
+            resources.ApplyResources(this.evetToolStripMenuItem, "evetToolStripMenuItem");
             // 
-            // btnOgrListele
+            // hayırToolStripMenuItem
             // 
-            resources.ApplyResources(this.btnOgrListele, "btnOgrListele");
-            this.btnOgrListele.FlatAppearance.BorderSize = 0;
-            this.btnOgrListele.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnOgrListele.Image = global::Summer_Project.Properties.Resources.Conact;
-            this.btnOgrListele.Name = "btnOgrListele";
-            this.btnOgrListele.UseVisualStyleBackColor = true;
-            this.btnOgrListele.Click += new System.EventHandler(this.btnOgrListele_Click);
-            this.btnOgrListele.Leave += new System.EventHandler(this.btnOgrListele_Leave);
+            this.hayırToolStripMenuItem.Name = "hayırToolStripMenuItem";
+            resources.ApplyResources(this.hayırToolStripMenuItem, "hayırToolStripMenuItem");
             // 
-            // btnAnasayfa
+            // txtDelete
             // 
-            resources.ApplyResources(this.btnAnasayfa, "btnAnasayfa");
-            this.btnAnasayfa.FlatAppearance.BorderSize = 0;
-            this.btnAnasayfa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnAnasayfa.Image = global::Summer_Project.Properties.Resources.home;
-            this.btnAnasayfa.Name = "btnAnasayfa";
-            this.btnAnasayfa.UseVisualStyleBackColor = true;
-            this.btnAnasayfa.Click += new System.EventHandler(this.btnAnasayfa_Click);
-            this.btnAnasayfa.Leave += new System.EventHandler(this.btnAnasayfa_Leave);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Summer_Project.Properties.Resources.Untitled_11;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnOgrenciEkle
-            // 
-            resources.ApplyResources(this.btnOgrenciEkle, "btnOgrenciEkle");
-            this.btnOgrenciEkle.Name = "btnOgrenciEkle";
-            this.btnOgrenciEkle.UseVisualStyleBackColor = true;
-            this.btnOgrenciEkle.Click += new System.EventHandler(this.btnOgrenciEkle_Click);
+            resources.ApplyResources(this.txtDelete, "txtDelete");
+            this.txtDelete.Name = "txtDelete";
             // 
             // Anasayfa
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.Controls.Add(this.txtDelete);
+            this.Controls.Add(this.btnOgrenciSil);
+            this.Controls.Add(this.pnlMove);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.boxAra);
             this.Controls.Add(this.butonAra);
@@ -256,11 +297,11 @@ namespace Summer_Project
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlAnasayfa.ResumeLayout(false);
             this.pnlAnasayfa.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +331,10 @@ namespace Summer_Project
         private System.Windows.Forms.TextBox boxAra;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnOgrenciEkle;
+        private System.Windows.Forms.Panel pnlMove;
+        private System.Windows.Forms.Button btnOgrenciSil;
+        private System.Windows.Forms.ToolStripMenuItem evetToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hayırToolStripMenuItem;
+        private System.Windows.Forms.TextBox txtDelete;
     }
 }

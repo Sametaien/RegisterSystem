@@ -19,6 +19,9 @@ namespace Summer_Project
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         public static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
 
+        int mov;
+        int movX;
+        int movY;
 
         public Anasayfa()
         {
@@ -43,8 +46,11 @@ namespace Summer_Project
             btnOrtalama.Enabled = false;
             boxAra.Hide();
             pictureBox2.Hide();
+            this.Location = Screen.AllScreens[0].WorkingArea.Location;
 
         }
+
+      
 
         private void btnAnasayfa_Click(object sender, EventArgs e)
         {
@@ -171,5 +177,54 @@ namespace Summer_Project
             OgrenciEkle fr = new OgrenciEkle();
             fr.Show();
         }
+
+        private void pnlMove_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1;
+            movX = e.X;
+            movY = e.Y;
+        }
+
+        private void pnlMove_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
+        }
+
+        private void pnlMove_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
+        }
+
+        private void btnOgrenciSil_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Silme istediğinize emin misiniz?", "Onay", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                var y = Convert.ToInt32(txtDelete.Text);
+                var x = db.TBLOGRENCI.Find(y);
+                db.TBLOGRENCI.Remove(x);
+                db.SaveChanges();
+                DialogResult delete = MessageBox.Show("Silindi", "Bildirim", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (delete == DialogResult.OK)
+                {
+                    dataGridView1.DataSource = db.TBLOGRENCI.ToList();
+                    dataGridView1.Columns[5].Visible = false;
+                    dataTabloIsim = "ogr";
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("İşlem iptal edildi");
+                this.Close();
+            }
+        }
+
+
+
+
     }
 }

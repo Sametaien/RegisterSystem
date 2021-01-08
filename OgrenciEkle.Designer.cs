@@ -31,16 +31,17 @@ namespace Summer_Project
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAdı = new System.Windows.Forms.TextBox();
+            this.txtSoyad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtFoto = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCity = new System.Windows.Forms.TextBox();
             this.btnIptal = new System.Windows.Forms.Button();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.pnlMove2 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -65,26 +66,26 @@ namespace Summer_Project
             this.label2.TabIndex = 1;
             this.label2.Text = "Öğrenci Soyadı :";
             // 
-            // textBox1
+            // txtAdı
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 76);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(85, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtAdı.Location = new System.Drawing.Point(146, 76);
+            this.txtAdı.Name = "txtAdı";
+            this.txtAdı.Size = new System.Drawing.Size(85, 20);
+            this.txtAdı.TabIndex = 2;
             // 
-            // textBox2
+            // txtSoyad
             // 
-            this.textBox2.Location = new System.Drawing.Point(146, 106);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(85, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtSoyad.Location = new System.Drawing.Point(146, 106);
+            this.txtSoyad.Name = "txtSoyad";
+            this.txtSoyad.Size = new System.Drawing.Size(85, 20);
+            this.txtSoyad.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("PenultimateLight", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(32, 9);
+            this.label3.Location = new System.Drawing.Point(32, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(206, 22);
             this.label3.TabIndex = 4;
@@ -101,12 +102,12 @@ namespace Summer_Project
             this.label4.TabIndex = 5;
             this.label4.Text = "Öğrenci Fotoğraf :";
             // 
-            // textBox3
+            // txtFoto
             // 
-            this.textBox3.Location = new System.Drawing.Point(146, 135);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(85, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtFoto.Location = new System.Drawing.Point(146, 135);
+            this.txtFoto.Name = "txtFoto";
+            this.txtFoto.Size = new System.Drawing.Size(85, 20);
+            this.txtFoto.TabIndex = 6;
             // 
             // label5
             // 
@@ -119,12 +120,12 @@ namespace Summer_Project
             this.label5.TabIndex = 7;
             this.label5.Text = "Öğrenci Şehir :";
             // 
-            // textBox4
+            // txtCity
             // 
-            this.textBox4.Location = new System.Drawing.Point(146, 166);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(85, 20);
-            this.textBox4.TabIndex = 8;
+            this.txtCity.Location = new System.Drawing.Point(146, 166);
+            this.txtCity.Name = "txtCity";
+            this.txtCity.Size = new System.Drawing.Size(85, 20);
+            this.txtCity.TabIndex = 8;
             // 
             // btnIptal
             // 
@@ -145,6 +146,7 @@ namespace Summer_Project
             this.btnKaydet.TabIndex = 11;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.UseVisualStyleBackColor = true;
+            this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
             // label6
             // 
@@ -157,6 +159,17 @@ namespace Summer_Project
             this.label6.TabIndex = 12;
             this.label6.Text = "Copyrights © ";
             // 
+            // pnlMove2
+            // 
+            this.pnlMove2.BackColor = System.Drawing.Color.Black;
+            this.pnlMove2.Location = new System.Drawing.Point(-27, -3);
+            this.pnlMove2.Name = "pnlMove2";
+            this.pnlMove2.Size = new System.Drawing.Size(331, 21);
+            this.pnlMove2.TabIndex = 13;
+            this.pnlMove2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlMove2_MouseDown);
+            this.pnlMove2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlMove2_MouseMove);
+            this.pnlMove2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlMove2_MouseUp);
+            // 
             // OgrenciEkle
             // 
             this.AcceptButton = this.btnKaydet;
@@ -165,16 +178,17 @@ namespace Summer_Project
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.CancelButton = this.btnIptal;
             this.ClientSize = new System.Drawing.Size(279, 344);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.pnlMove2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtCity);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtFoto);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSoyad);
+            this.Controls.Add(this.txtAdı);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -190,15 +204,16 @@ namespace Summer_Project
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAdı;
+        private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtFoto;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCity;
         private System.Windows.Forms.Button btnIptal;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel pnlMove2;
     }
 }

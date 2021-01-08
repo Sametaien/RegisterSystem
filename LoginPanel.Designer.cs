@@ -102,6 +102,7 @@ namespace Summer_Project
             this.btnExit.Size = new System.Drawing.Size(40, 37);
             this.btnExit.TabIndex = 6;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // checkHatirla
             // 

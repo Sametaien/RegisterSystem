@@ -409,7 +409,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="pnlNav.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 193</value>
@@ -430,7 +430,127 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pnlNav.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciEkle.Name" xml:space="preserve">
+    <value>btnOgrenciEkle</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciEkle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciEkle.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciEkle.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
+    <value>dataGridView1</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;butonDers.Name" xml:space="preserve">
+    <value>butonDers</value>
+  </data>
+  <data name="&gt;&gt;butonDers.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butonDers.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;butonDers.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;butonNot.Name" xml:space="preserve">
+    <value>butonNot</value>
+  </data>
+  <data name="&gt;&gt;butonNot.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butonNot.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;butonNot.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="&gt;&gt;butonListe.Name" xml:space="preserve">
+    <value>butonListe</value>
+  </data>
+  <data name="&gt;&gt;butonListe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;butonListe.Parent" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;butonListe.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pnlAnasayfa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 22</value>
+  </data>
+  <data name="pnlAnasayfa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>676, 432</value>
+  </data>
+  <data name="pnlAnasayfa.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.Name" xml:space="preserve">
+    <value>pnlAnasayfa</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlAnasayfa.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btnOgrenciSil.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnOgrenciSil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>664, 497</value>
+  </data>
+  <data name="btnOgrenciSil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 20</value>
+  </data>
+  <data name="btnOgrenciSil.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnOgrenciSil.Text" xml:space="preserve">
+    <value>Öğrenci Sil</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciSil.Name" xml:space="preserve">
+    <value>btnOgrenciSil</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciSil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciSil.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOgrenciSil.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnOgrenciEkle.Location" type="System.Drawing.Point, System.Drawing">
     <value>274, 283</value>
@@ -576,27 +696,6 @@
   <data name="&gt;&gt;butonListe.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="pnlAnasayfa.Location" type="System.Drawing.Point, System.Drawing">
-    <value>224, 22</value>
-  </data>
-  <data name="pnlAnasayfa.Size" type="System.Drawing.Size, System.Drawing">
-    <value>676, 432</value>
-  </data>
-  <data name="pnlAnasayfa.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;pnlAnasayfa.Name" xml:space="preserve">
-    <value>pnlAnasayfa</value>
-  </data>
-  <data name="&gt;&gt;pnlAnasayfa.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlAnasayfa.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;pnlAnasayfa.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="butonAra.Location" type="System.Drawing.Point, System.Drawing">
     <value>664, 471</value>
   </data>
@@ -619,7 +718,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;butonAra.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="boxAra.Location" type="System.Drawing.Point, System.Drawing">
     <value>745, 471</value>
@@ -640,7 +739,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;boxAra.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>904, 471</value>
@@ -664,6 +763,60 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="pnlMove.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-8, 0</value>
+  </data>
+  <data name="pnlMove.Size" type="System.Drawing.Size, System.Drawing">
+    <value>961, 16</value>
+  </data>
+  <data name="pnlMove.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pnlMove.Name" xml:space="preserve">
+    <value>pnlMove</value>
+  </data>
+  <data name="&gt;&gt;pnlMove.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlMove.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlMove.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="evetToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
+  <data name="evetToolStripMenuItem.Text" xml:space="preserve">
+    <value>Evet</value>
+  </data>
+  <data name="hayırToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 22</value>
+  </data>
+  <data name="hayırToolStripMenuItem.Text" xml:space="preserve">
+    <value>Hayır</value>
+  </data>
+  <data name="txtDelete.Location" type="System.Drawing.Point, System.Drawing">
+    <value>745, 497</value>
+  </data>
+  <data name="txtDelete.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 20</value>
+  </data>
+  <data name="txtDelete.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;txtDelete.Name" xml:space="preserve">
+    <value>txtDelete</value>
+  </data>
+  <data name="&gt;&gt;txtDelete.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtDelete.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtDelete.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -695,6 +848,18 @@
   </data>
   <data name="&gt;&gt;dbSinavOgrenciDataSetBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;evetToolStripMenuItem.Name" xml:space="preserve">
+    <value>evetToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;evetToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hayırToolStripMenuItem.Name" xml:space="preserve">
+    <value>hayırToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;hayırToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Anasayfa</value>
